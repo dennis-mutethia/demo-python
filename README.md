@@ -85,27 +85,27 @@ demo-python-app/
 ```
 
 ### Code Breakdown
-`app.py`
+`app.py` <br />
 The main Flask application file:
 - Sets up routes for the dashboard, registration, login, and logout.
 - Uses environment variables for configuration.
 
-`utils/db.py`
+`utils/db.py` <br />
 Handles Supabase client initialization:
 - Connects to Supabase using the supabase-py library.
 - Creates the users table if it doesn’t exist.
 
-`utils/register.py`
+`utils/register.py` <br />
 Manages user registration:
 - Checks for existing usernames.
 - Hashes passwords and inserts new users into Supabase.
 
-`utils/login.py`
+`utils/login.py` <br />
 Handles user login:
 - Verifies credentials and sets session data.
 - Redirects to the dashboard on success.
 
-`templates/`
+`templates/` <br />
 Contains HTML files with Bootstrap styling:
 - `dashboard.html`: User dashboard with navbar and cards.
 - `login.html`: Login form.
@@ -113,8 +113,7 @@ Contains HTML files with Bootstrap styling:
 
 
 ### Dev Containers
-Ensure that you have installed dev containers in your vs-code
-
+Ensure that you have installed dev containers in your vs-code <br />
 Reopen the application as a dev- container
 
 ### Running the App
