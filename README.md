@@ -15,7 +15,9 @@ The app uses Supabase for database storage, Flask for the web framework, and Boo
 ## Prerequisites
 
 Before running this app, ensure you have:
-- **Python 3.8+** installed.
+- **VS Code** installed.
+- **Docker Desktop** installed.
+- **Vs Code Dev Container Extension** installed.
 - A **Supabase account** (free tier) and a project set up.
 - **Git** (optional, for cloning the repo).
 
@@ -63,9 +65,14 @@ Replace placeholders with your Supabase credentials.
 
 ### 5. Project Structure
 ```
-flask-supabase-app/
-├── app.py
+demo-python-app/
+├── .devcontainer/
+│   ├── devcontainer.json
+├── docker-compose.yml
+├── Dockerfile
+├── requirements.txt
 ├── .env
+├── app.py
 ├── templates/
 │   ├── dashboard.html
 │   ├── login.html
@@ -106,8 +113,9 @@ Contains HTML files with Bootstrap styling:
 
 
 ### Dev Containers
-- Ensure that you have installed dev containers in your vs-code
-- Reopen the application as a dev- container
+Ensure that you have installed dev containers in your vs-code
+
+Reopen the application as a dev- container
 
 ### Running the App
 1. Start the Flask server:
